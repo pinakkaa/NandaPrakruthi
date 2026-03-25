@@ -35,7 +35,7 @@ body {
   width: 48px;
   height: 1px;
   background: var(--gold);
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .gold-divider.left { margin-left: 0; }
@@ -43,7 +43,7 @@ body {
 /* ─── SECTION 3: THE BIG IDEA ──────────────────────── */
 #section-big-idea {
   background: var(--bg-dark-1);
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
 }
@@ -170,15 +170,17 @@ body {
   background:  var(--bg-dark-1);
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  /* min-height: 600px; */
   display: grid;
+  padding: 50px 80px;
   grid-template-columns: 1fr 1fr;
 }
 
 .prr-image-side {
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  /* min-height: 600px; */
+  height: 500px;
 }
 
 .prr-image-side img {
@@ -237,7 +239,7 @@ body {
 }
 
 .prr-content-side {
-  padding: 80px 64px;
+  padding: 10px 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +294,7 @@ body {
 /* ─── SECTION 6: LIFESTYLE ─────────────────────────── */
 #section-lifestyle {
   background:  var(--bg-dark-1);
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   overflow: hidden;
 }
@@ -476,7 +478,7 @@ body {
 
 .cta-inner h2 {
   /* font-family: var(--font-serif); */
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(36px, 5vw, 54px);
   font-weight: 300;
   color: var(--white);
   line-height: 1.15;
@@ -525,11 +527,11 @@ body {
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
   color: var(--green-deep);
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 18px 40px;
+  padding: 5px 20px;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -538,6 +540,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  border-radius: 8px;
 }
 
 .btn-primary:hover {
@@ -609,7 +612,8 @@ body {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 580px;
+  /* min-height: 580px; */
+  padding: 50px 100px;
 }
 
 .invest-content-side {
@@ -769,9 +773,27 @@ body {
 
 .amenities-section-wrapper{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.amenities-section-content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 .amenities-title{
   text-align: center;
+}
+.trust-inner h2{
+    font-size: clamp(30px, 3vw, 46px);
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-align: center;
 }
